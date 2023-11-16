@@ -1,0 +1,49 @@
+footer {
+  margin-top: 500px;
+  .text_strong {
+    font-size: 2.3rem;
+    font-weight: 700 !important;
+    color: #08003d;
+    font-style: normal;
+  }
+  .footer_title {
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #08003d;
+    margin-bottom: 2rem;
+    font-style: normal;
+    font-family: "Barlow Condensed";
+  }
+  .list_action {
+    font-size: 2.3rem;
+    color: #08003d;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .social_action_list {
+    a:not(:last-child) {
+      margin-right: 2.4rem;
+    }
+  }
+  .btn_action {
+    margin-top: 6.3rem;
+  }
+
+  .copyright_text {
+    font-size: 1.4rem;
+    color: #08003d;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 30px;
+  }
+  .copyright_wrapper {
+    border-top: 1px solid #000000;
+    font-size: 1.4rem;
+    color: #08003d;
+    font-family: "Barlow";
+
+    font-style: normal;
+    font-weight: 500;
+  }
+}

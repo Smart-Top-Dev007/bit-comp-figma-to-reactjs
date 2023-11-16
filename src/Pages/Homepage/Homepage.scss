@@ -1,0 +1,254 @@
+#Homepage {
+  #Section1 {
+    min-height: 1224px;
+    background: url("../../Static/img/ArtWeb1.png") 40% 0px / cover no-repeat;
+    @media (min-width: 992px) {
+      background: url("../../Static/img/ArtWeb1.png") center 0px / contain
+        no-repeat;
+    }
+  }
+
+  // AboutSection
+
+  #AboutSection {
+    position: relative;
+    .project_desk_wrapper {
+      @media (max-width: 1200px) {
+        height: 80rem;
+      }
+    }
+    .about_game_desc {
+      margin-top: 35rem;
+      @media (max-width: 991px) {
+        margin-top: 10rem;
+        height: 38rem;
+      }
+    }
+  }
+  #GameplaySection {
+    @media (max-width: 991px) {
+      margin-top: -10rem !important;
+    }
+    .slide_img {
+      pointer-events: none;
+      @media (max-width: 991px) {
+        margin-top: -5rem;
+        height: 558px;
+        width: auto !important;
+        object-fit: cover;
+      }
+      @media (max-width: 400px) {
+        width: 100% !important;
+      }
+    }
+
+    .section_content {
+      margin-top: 10rem;
+      @media (max-width: 991px) {
+        margin-top: -5rem !important;
+        * {
+          color: #fff !important;
+        }
+      }
+    }
+    // prev button
+    .swiper-button-prev {
+      left: calc(100% - 430px);
+      top: 85%;
+      width: 65px;
+      height: 82px;
+      @media (max-width: 991px) {
+        width: 38px;
+        height: 48px;
+        left: calc(50% - 150px);
+        top: 93%;
+      }
+    }
+    .swiper-button-prev:after {
+      content: "";
+      background: url("../../Static/img/arow_light.png") center/100% 100%
+        no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+
+    // next button
+    .swiper-button-next {
+      left: calc(100% - 100px);
+      top: 85%;
+      width: 65px;
+      height: 82px;
+      @media (max-width: 991px) {
+        width: 38px;
+        height: 48px;
+        left: calc(50% + 80px);
+        top: 93%;
+      }
+    }
+    .swiper-button-next:after {
+      content: "";
+      background: url("../../Static/img/arow_right.png") center/100% 100%
+        no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+
+    // swiper-pagination-bullets
+    .swiper-pagination-bullets {
+      display: flex;
+      width: 200px;
+      left: calc(100% - 335px);
+      background: #0f006d;
+      bottom: 12% !important;
+      @media (max-width: 991px) {
+        display: none;
+      }
+      .swiper-pagination-bullet {
+        flex-grow: 1;
+        border-radius: 0px;
+        height: 3px;
+        &.swiper-pagination-bullet-active {
+          background: #03b4e8;
+        }
+      }
+    }
+  }
+
+  #nfts {
+    padding-top: 400px;
+    position: relative;
+    .section_title {
+      margin-top: -100px !important;
+      @media (max-width: 1300px) {
+        margin-top: 0px !important;
+      }
+      @media (max-width: 1199px) {
+        margin-top: -304px !important;
+      }
+      @media (max-width: 991px) {
+        margin-top: -100px !important;
+      }
+    }
+    .nfts_img {
+      position: absolute;
+      top: 1%;
+      @media (max-width: 1300px) {
+        top: 53%;
+        object-fit: contain;
+        width: 100%;
+      }
+      @media (max-width: 1199px) {
+        top: 0%;
+      }
+      @media (max-width: 991px) {
+        top: 78%;
+      }
+    }
+  }
+  #HowToEarn {
+    margin-top: 800px;
+    margin-bottom: 50px;
+    .circle_header {
+      width: 342px;
+      height: 342px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: url("../../Static/img/circle.png") center/100% 100% no-repeat;
+      margin-bottom: 4.8rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      @media (max-width: 767px) {
+        width: 215px;
+        height: 215px;
+        margin-bottom: 2rem;
+        h3 {
+          font-size: 2.7rem;
+        }
+      }
+    }
+  }
+  #TokenomicsSection {
+    .section_list_box {
+      height: 813px;
+      background: url("../../Static/img/token_frame.png") center/100% 100%
+        no-repeat;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 767px) {
+        background: #55dfff;
+      }
+      .token_list {
+        position: relative;
+        z-index: 10;
+        .token_circle {
+          position: relative;
+          text-align: center;
+          margin-bottom: 2.6rem;
+          @media (max-width: 767px) {
+            margin-bottom: 1.5rem;
+            svg {
+              width: 120px;
+              height: 120px;
+            }
+          }
+          .token_name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            @media (max-width: 767px) {
+              font-size: 2.7rem;
+            }
+          }
+        }
+        .token_description {
+          @media (max-width: 767px) {
+            h4 {
+              font-size: 2.7rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  #Roadmap{
+    margin-top: 50px!important;
+  }
+}
+// outside img
+.section_img_outside {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50rem;
+  object-fit: contain;
+  object-position: right center;
+  pointer-events: none;
+  @media (max-width: 991px) {
+    height: 40rem;
+    width: 100%;
+    object-fit: contain;
+    bottom: 10%;
+  }
+  &.img_launchpad {
+    height: 80rem;
+    bottom: -60%;
+    @media (max-width: 992px) {
+      height: 40rem;
+      right: 0%;
+    }
+  }
+  &.token_img {
+    left: 0px;
+    right: auto;
+    top: 0%;
+    bottom: auto;
+    height: 110%;
+  }
+}
